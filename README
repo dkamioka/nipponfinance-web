@@ -1,1 +1,48 @@
-Init
+# Guia de publicação do site estático da Nippon Finance
+
+Este repositório contém os arquivos estáticos (`index.html`, `styles.css` e `tos.html`) do site da Nippon Finance.
+As seções abaixo descrevem como publicar o conteúdo no GitHub Pages e como apontar o subdomínio
+`finance.casanippon.com.br` no Registro.br.
+
+## 1. Preparar o repositório no GitHub
+
+1. Crie um repositório público no GitHub (ex.: `casa-nippon/nipponfinance-web`).
+2. Adicione este repositório local como `origin` e envie os arquivos:
+   ```bash
+   git remote add origin git@github.com:casa-nippon/nipponfinance-web.git
+   git push -u origin main
+   ```
+   > Ajuste o nome da organização/usuário conforme necessário e garanta que o branch principal se chame `main`.
+
+## 2. Habilitar o GitHub Pages
+
+1. No GitHub, acesse **Settings → Pages**.
+2. Em **Build and deployment**, escolha **Source: Deploy from a branch**.
+3. Selecione o branch `main` e a pasta `/ (root)`.
+4. Salve. O GitHub irá gerar a URL pública no formato `https://<usuario>.github.io/nipponfinance-web/`.
+
+## 3. Definir o domínio personalizado
+
+1. Ainda em **Settings → Pages**, localize a seção **Custom domain**.
+2. Informe `finance.casanippon.com.br` e clique em **Save**.
+3. O GitHub criará (ou atualizará) um arquivo `CNAME` na raiz do repositório com o domínio informado. Confirme se o arquivo foi adicionado.
+4. Aguarde a validação automática do certificado SSL (pode levar alguns minutos) e deixe marcada a opção **Enforce HTTPS**.
+
+## 4. Configurar o subdomínio no Registro.br
+
+1. Acesse a conta do Registro.br e selecione o domínio `casanippon.com.br`.
+2. Em **DNS → Editar Zona**, crie um registro do tipo **CNAME**:
+   - **Nome**: `finance`
+   - **Destino**: `<usuario>.github.io.` (ex.: `casa-nippon.github.io.`) – inclua o ponto final para indicar FQDN.
+   - **TTL**: mantenha o padrão (geralmente 3600 segundos).
+3. Se houver outro provedor de DNS (Cloudflare, etc.), faça a inclusão do CNAME por lá em vez do painel do Registro.br.
+4. Salve as alterações e aguarde a propagação (pode levar até 24h, mas normalmente ocorre em menos de 1h).
+
+## 5. Verificação e manutenção
+
+1. Depois da propagação, acesse `https://finance.casanippon.com.br` e confirme que o site carrega com HTTPS.
+2. Utilize ferramentas como [https://dnschecker.org](https://dnschecker.org) para validar a propagação do CNAME.
+3. A cada alteração no site, faça commit e `git push` para o branch `main`. O GitHub Pages reconstruirá o site automaticamente.
+4. Mantenha o arquivo `CNAME` presente na raiz do repositório para evitar que o domínio personalizado seja removido.
+
+Seguindo esses passos, o site estático ficará publicado via GitHub Pages com o subdomínio configurado pelo Registro.br.
