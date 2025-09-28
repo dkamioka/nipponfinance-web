@@ -9,16 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-lang="pt">
     <header class="navbar">
       <div class="container">
         <a class="logo" href="#inicio" aria-label="Nippon Finance">Nippon Finance</a>
-        <nav class="nav-links" aria-label="Navegação principal">
-          <a href="#solucoes">Soluções</a>
-          <a href="#como-funciona">Como funciona</a>
-          <a href="#compliance">Compliance</a>
-          <a href="#contato">Contato</a>
-        </nav>
+        <div class="navbar__actions">
+          <nav class="nav-links" aria-label="Navegação principal">
+            <a href="#solucoes">
+              <span class="lang lang-pt">Soluções</span>
+              <span class="lang lang-es">Soluciones</span>
+            </a>
+            <a href="#como-funciona">
+              <span class="lang lang-pt">Como funciona</span>
+              <span class="lang lang-es">Cómo funciona</span>
+            </a>
+            <a href="#compliance">Compliance</a>
+            <a href="#contato">
+              <span class="lang lang-pt">Contato</span>
+              <span class="lang lang-es">Contacto</span>
+            </a>
+          </nav>
+          <div class="lang-toggle" role="group" aria-label="Seleção de idioma">
+            <button type="button" data-lang-switch="pt" aria-pressed="true" aria-label="Português">PT</button>
+            <button type="button" data-lang-switch="es" aria-pressed="false" aria-label="Español">ES</button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -26,11 +41,24 @@
       <section class="hero">
         <div class="container hero__content">
           <div class="hero__text">
-            <p class="hero__eyebrow"><span aria-hidden="true">✨</span>Um novo capítulo do Grupo Casa Nippon</p>
-            <h1>Soluções de pagamentos internacionais com a agilidade do Pix</h1>
-            <p>
-              Levamos o poder do Pix para além das fronteiras brasileiras com ofertas desenvolvidas ao lado de instituições licenciadas no Brasil. Somos o hub comercial que aproxima sua operação internacional de um ecossistema seguro,
+           <p class="hero__eyebrow">
+              <span aria-hidden="true">✨</span>
+              <span class="lang lang-pt">Um novo capítulo do Grupo Casa Nippon</span>
+              <span class="lang lang-es">Un nuevo capítulo del Grupo Casa Nippon</span>
+            </p>
+            <h1>
+              <span class="lang lang-pt">Soluções de pagamentos internacionais com a agilidade do Pix</span>
+              <span class="lang lang-es">Soluciones de pagos internacionales con la agilidad del Pix</span>
+            </h1>
+            <p class="lang lang-pt">
+              Levamos o poder do Pix para além das fronteiras brasileiras com ofertas desenvolvidas ao lado de instituições
+              licenciadas no Brasil. Somos o hub comercial que aproxima sua operação internacional de um ecossistema seguro,
               regulado e conectado a especialistas em câmbio e pagamentos.
+            </p>
+            <p class="lang lang-es">
+              Llevamos el poder del Pix más allá de las fronteras brasileñas con ofertas desarrolladas junto a instituciones
+              licenciadas en Brasil. Somos el hub comercial que acerca tu operación internacional a un ecosistema seguro,
+              regulado y conectado con especialistas en cambio y pagos.
             </p>
             <div class="hero__actions">
               <a
@@ -40,16 +68,27 @@
                 rel="noopener"
               >
                 <span class="button__icon" aria-hidden="true">💬</span>
-                Quero ser atendido
+                <span class="lang lang-pt">Quero ser atendido</span>
+                <span class="lang lang-es">Quiero ser atendido</span>
               </a>
-              <a class="button button--ghost" href="#solucoes">Conheça as soluções</a>
+              <a class="button button--ghost" href="#solucoes">
+                <span class="lang lang-pt">Conheça as soluções</span>
+                <span class="lang lang-es">Conoce las soluciones</span>
+              </a>
             </div>
           </div>
           <div class="hero__card" role="presentation">
             <div class="hero__card-inner">
-              <div class="hero__badge"><span aria-hidden="true">⚡</span> Liquidação em minutos</div>
+              <div class="hero__badge">
+                <span aria-hidden="true">⚡</span>
+                <span class="lang lang-pt"> Liquidação em minutos</span>
+                <span class="lang lang-es"> Liquidación en minutos</span>
+              </div>
               <p class="hero__card-title">Pix Internacional</p>
-              <p class="hero__card-body">Receba ou envie pagamentos com liquidação em poucos minutos, sem fricção cambial.</p>
+              <p class="hero__card-body">
+                <span class="lang lang-pt">Receba ou envie pagamentos com liquidação em poucos minutos, sem fricção cambial.</span>
+                <span class="lang lang-es">Recibe o envía pagos con liquidación en pocos minutos, sin fricción cambiaria.</span>
+              </p>
             </div>
           </div>
         </div>
@@ -57,56 +96,112 @@
 
       <section class="about" aria-labelledby="sobre">
         <div class="container">
-          <h2 id="sobre">Quem somos</h2>
-          <p class="lead">
+          <h2 id="sobre">
+            <span class="lang lang-pt">Quem somos</span>
+            <span class="lang lang-es">Quiénes somos</span>
+          </h2>
+          <p class="lead lang lang-pt">
             A Nippon Finance nasce para ser a face de tecnologia e relacionamento do Grupo Casa Nippon no universo financeiro.
             Somos um canal de distribuição comercial com atendimento consultivo e foco total na experiência dos lojistas,
             marketplaces e empresas que precisam de câmbio sem burocracia.
+          </p>
+          <p class="lead lang lang-es">
+            Nippon Finance nace para ser el rostro de tecnología y relacionamiento del Grupo Casa Nippon en el universo financiero.
+            Somos un canal de distribución comercial con atención consultiva y foco total en la experiencia de comercios,
+            marketplaces y empresas que necesitan cambio sin burocracia.
           </p>
         </div>
       </section>
 
       <section class="solutions" id="solucoes" aria-labelledby="solucoes-titulo">
         <div class="container">
-          <h2 id="solucoes-titulo">Soluções que conectam fronteiras</h2>
+          <h2 id="solucoes-titulo">
+            <span class="lang lang-pt">Soluções que conectam fronteiras</span>
+            <span class="lang lang-es">Soluciones que conectan fronteras</span>
+          </h2>
           <div class="solutions__grid">
             <article class="card">
-             <div class="card__icon" aria-hidden="true">🌎</div>
+              <div class="card__icon" aria-hidden="true">🌎</div>
               <h3>Pix Internacional</h3>
-              <p>
+              <p class="lang lang-pt">
                 Pagamentos instantâneos em reais para quem vende em marketplaces e plataformas globais. Liquidação rápida,
                 conciliação automatizada e suporte em português, inglês e espanhol.
               </p>
+              <p class="lang lang-es">
+                Pagos instantáneos en reales para quienes venden en marketplaces y plataformas globales. Liquidación rápida,
+                conciliación automatizada y soporte en portugués, inglés y español.
+              </p>
               <ul>
-                <li>Receba de turistas e parceiros estrangeiros utilizando QR Codes Pix.</li>
-                <li>Experiência de compra com custo transparente e câmbio competitivo.</li>
-                <li>Compliance e KYC conduzidos por parceiros licenciados.</li>
+                <li>
+                  <span class="lang lang-pt">Receba de turistas e parceiros estrangeiros utilizando QR Codes Pix.</span>
+                  <span class="lang lang-es">Recibe de turistas y socios extranjeros utilizando códigos QR Pix.</span>
+                </li>
+                <li>
+                  <span class="lang lang-pt">Experiência de compra com custo transparente e câmbio competitivo.</span>
+                  <span class="lang lang-es">Experiencia de compra con costo transparente y tipo de cambio competitivo.</span>
+                </li>
+                <li>
+                  <span class="lang lang-pt">Compliance e KYC conduzidos por parceiros licenciados.</span>
+                  <span class="lang lang-es">Cumplimiento y KYC conducidos por socios licenciados.</span>
+                </li>
               </ul>
             </article>
             <article class="card">
               <div class="card__icon" aria-hidden="true">🧩</div>
-              <h3>Plataforma digital de remessas</h3>
-              <p>
+              <h3>
+                <span class="lang lang-pt">Plataforma digital de remessas</span>
+                <span class="lang lang-es">Plataforma digital de remesas</span>
+              </h3>
+              <p class="lang lang-pt">
                 Uma jornada de autoatendimento com identidade Nippon Finance para remessas internacionais. Configure fluxos,
                 integrações e acessos em um ambiente totalmente digital, preparado para escalar com o seu negócio.
               </p>
+              <p class="lang lang-es">
+                Una experiencia de autoservicio con identidad Nippon Finance para remesas internacionales. Configura flujos,
+                integraciones y accesos en un entorno totalmente digital, listo para escalar con tu negocio.
+              </p>
               <ul>
-                <li>Portal personalizado com onboarding guiado e gestão de limites.</li>
-                <li>APIs e dashboards para conciliação financeira e relatórios.</li>
-                <li>Backoffice unificado com suporte especializado da Casa Nippon.</li>
+                <li>
+                  <span class="lang lang-pt">Portal personalizado com onboarding guiado e gestão de limites.</span>
+                  <span class="lang lang-es">Portal personalizado con onboarding guiado y gestión de límites.</span>
+                </li>
+                <li>
+                  <span class="lang lang-pt">APIs e dashboards para conciliação financeira e relatórios.</span>
+                  <span class="lang lang-es">APIs y tableros para conciliación financiera y reportes.</span>
+                </li>
+                <li>
+                  <span class="lang lang-pt">Backoffice unificado com suporte especializado da Casa Nippon.</span>
+                  <span class="lang lang-es">Backoffice unificado con soporte especializado de Casa Nippon.</span>
+                </li>
               </ul>
             </article>
             <article class="card">
               <div class="card__icon" aria-hidden="true">🤝</div>
-              <h3>Remessas e câmbio consultivo</h3>
-              <p>
+              <h3>
+                <span class="lang lang-pt">Remessas e câmbio consultivo</span>
+                <span class="lang lang-es">Remesas y cambio consultivo</span>
+              </h3>
+              <p class="lang lang-pt">
                 Envie e receba moedas estrangeiras com assessoria completa. Somos análogos a uma casa de câmbio digital, com
                 curadoria de taxas, gestão documental e acompanhamento de ponta a ponta.
               </p>
+              <p class="lang lang-es">
+                Envía y recibe monedas extranjeras con asesoría completa. Somos análogos a una casa de cambio digital, con
+                curaduría de tasas, gestión documental y acompañamiento de punta a punta.
+              </p>
               <ul>
-                <li>Operações spot e programadas com monitoramento de mercado.</li>
-                <li>Documentação simplificada e suporte regulatório.</li>
-                <li>Atendimento regional para Brasil, Paraguai, Argentina e Chile.</li>
+                <li>
+                  <span class="lang lang-pt">Operações spot e programadas com monitoramento de mercado.</span>
+                  <span class="lang lang-es">Operaciones spot y programadas con monitoreo de mercado.</span>
+                </li>
+                <li>
+                  <span class="lang lang-pt">Documentação simplificada e suporte regulatório.</span>
+                  <span class="lang lang-es">Documentación simplificada y soporte regulatorio.</span>
+                </li>
+                <li>
+                  <span class="lang lang-pt">Atendimento regional para Brasil, Paraguai, Argentina e Chile.</span>
+                  <span class="lang lang-es">Atención regional para Brasil, Paraguay, Argentina y Chile.</span>
+                </li>
               </ul>
             </article>
           </div>
@@ -115,25 +210,44 @@
 
       <section class="how-it-works" id="como-funciona" aria-labelledby="como-funciona-titulo">
         <div class="container">
-          <h2 id="como-funciona-titulo">Como funciona na prática</h2>
+          <h2 id="como-funciona-titulo">
+            <span class="lang lang-pt">Como funciona na prática</span>
+            <span class="lang lang-es">Cómo funciona en la práctica</span>
+          </h2>
           <div class="steps">
             <div class="step">
               <span class="step__number">1</span>
               <div class="step__icon" aria-hidden="true">🧭</div>
-              <h3>Descoberta consultiva</h3>
-              <p>Mapeamos sua operação, necessidades fiscais e regras cambiais do país onde sua empresa atua.</p>
+              <h3>
+                <span class="lang lang-pt">Descoberta consultiva</span>
+                <span class="lang lang-es">Descubrimiento consultivo</span>
+              </h3>
+              <p class="lang lang-pt">Mapeamos sua operação, necessidades fiscais e regras cambiais do país onde sua empresa atua.</p>
+              <p class="lang lang-es">Mapeamos tu operación, necesidades fiscales y reglas cambiarias del país donde actúa tu empresa.</p>
             </div>
             <div class="step">
               <span class="step__number">2</span>
               <div class="step__icon" aria-hidden="true">🔗</div>
-              <h3>Estruturação com parceiros licenciados</h3>
-              <p>Conectamos sua empresa aos produtos dos nossos parceiros autorizados, definindo limites, onboarding e fluxos de aprovação.</p>
+              <h3>
+                <span class="lang lang-pt">Estruturação com parceiros licenciados</span>
+                <span class="lang lang-es">Estructuración con socios licenciados</span>
+              </h3>
+              <p class="lang lang-pt">
+                Conectamos sua empresa aos produtos dos nossos parceiros autorizados, definindo limites, onboarding e fluxos de aprovação.
+              </p>
+              <p class="lang lang-es">
+                Conectamos tu empresa a los productos de nuestros socios autorizados, definiendo límites, onboarding y flujos de aprobación.
+              </p>
             </div>
             <div class="step">
               <span class="step__number">3</span>
               <div class="step__icon" aria-hidden="true">🚀</div>
-              <h3>Go-live e suporte contínuo</h3>
-              <p>Atuamos como ponto focal para otimizar a experiência de pagamentos, relatórios e conformidade permanente.</p>
+              <h3>
+                <span class="lang lang-pt">Go-live e suporte contínuo</span>
+                <span class="lang lang-es">Go-live y soporte continuo</span>
+              </h3>
+              <p class="lang lang-pt">Atuamos como ponto focal para otimizar a experiência de pagamentos, relatórios e conformidade permanente.</p>
+              <p class="lang lang-es">Actuamos como punto focal para optimizar la experiencia de pagos, reportes y cumplimiento permanente.</p>
             </div>
           </div>
         </div>
@@ -141,31 +255,50 @@
 
       <section class="compliance" id="compliance" aria-labelledby="compliance-titulo">
         <div class="container">
-          <h2 id="compliance-titulo">Compliance e enquadramento legal</h2>
+          <h2 id="compliance-titulo">Compliance</h2>
           <div class="compliance__grid">
             <div>
-              <p>
-                Operamos exclusivamente como representantes comerciais de instituições financeiras parceiras autorizadas pelo
-                Banco Central do Brasil. Nossas atividades estão restritas à prospecção, apresentação de propostas, suporte
-                comercial e acompanhamento de clientes corporativos.
+              <p class="lang lang-pt">
+                Operamos exclusivamente como representantes comerciais de instituições financeiras parceiras autorizadas pelo Banco Central do Brasil. Nossas atividades estão restritas à prospecção, apresentação de propostas, suporte comercial e acompanhamento de clientes corporativos.
               </p>
-              <p>
-                Não realizamos liquidação financeira, custódia de valores ou gestão de contas. Toda a operacionalização cambial é
-                executada diretamente pelos nossos parceiros regulados, conforme as normas do Banco Central do Brasil, do Conselho
-                Monetário Nacional e dos órgãos reguladores locais de cada país onde atuamos.
+              <p class="lang lang-es">
+                Operamos exclusivamente como representantes comerciales de instituciones financieras socias autorizadas por el Banco Central de Brasil. Nuestras actividades se restringen a la prospección, presentación de propuestas, soporte comercial y acompañamiento de clientes corporativos.
+              </p>
+              <p class="lang lang-pt">
+                Não realizamos liquidação financeira, custódia de valores ou gestão de contas. Toda a operacionalização cambial é executada diretamente pelos nossos parceiros regulados, conforme as normas do Banco Central do Brasil, do Conselho Monetário Nacional e dos órgãos reguladores locais de cada país onde atuamos.
+              </p>
+              <p class="lang lang-es">
+                No realizamos liquidación financiera, custodia de valores ni gestión de cuentas. Toda la operación cambiaria es ejecutada directamente por nuestros socios regulados, conforme las normas del Banco Central de Brasil, del Consejo Monetario Nacional y de los entes reguladores locales de cada país donde actuamos.
               </p>
             </div>
             <div class="legal-pillars">
-              <h3>Pilares regulatórios que seguimos</h3>
+              <h3>
+                <span class="lang lang-pt">Pilares regulatórios que seguimos</span>
+                <span class="lang lang-es">Pilares regulatorios que seguimos</span>
+              </h3>
               <ul>
-                <li>Brasil: Lei nº 4.595/1964 (Sistema Financeiro Nacional) e Lei nº 4.886/1965 (Representação Comercial).</li>
-                <li>Paraguai: Lei nº 861/1996 - General de Bancos, Financieras y Otras Entidades de Crédito.</li>
-                <li>Argentina: Lei nº 21.526 - Lei de Entidades Financeiras.</li>
-                <li>Chile: DFL nº 3/1997 - Lei Geral de Bancos e regulamentações da CMF.</li>
+                <li>
+                  <span class="lang lang-pt">Brasil: Lei nº 4.595/1964 (Sistema Financeiro Nacional) e Lei nº 4.886/1965 (Representação Comercial).</span>
+                  <span class="lang lang-es">Brasil: Ley nº 4.595/1964 (Sistema Financiero Nacional) y Ley nº 4.886/1965 (Representación Comercial).</span>
+                </li>
+                <li>
+                  <span class="lang lang-pt">Paraguai: Lei nº 861/1996 - General de Bancos, Financieras y Otras Entidades de Crédito.</span>
+                  <span class="lang lang-es">Paraguay: Ley nº 861/1996 - General de Bancos, Financieras y Otras Entidades de Crédito.</span>
+                </li>
+                <li>
+                  <span class="lang lang-pt">Argentina: Lei nº 21.526 - Lei de Entidades Financeiras.</span>
+                  <span class="lang lang-es">Argentina: Ley nº 21.526 - Ley de Entidades Financieras.</span>
+                </li>
+                <li>
+                  <span class="lang lang-pt">Chile: DFL nº 3/1997 - Lei Geral de Bancos e regulamentações da CMF.</span>
+                  <span class="lang lang-es">Chile: DFL nº 3/1997 - Ley General de Bancos y regulaciones de la CMF.</span>
+                </li>
               </ul>
-              <p class="legal-note">
-                Atuamos como canal de distribuição comercial em conformidade com a legislação de representação, marketing e
-                intermediação permitida em cada jurisdição.
+              <p class="legal-note lang lang-pt">
+                Atuamos como canal de distribuição comercial em conformidade com a legislação de representação, marketing e intermediação permitida em cada jurisdição.
+              </p>
+              <p class="legal-note lang lang-es">
+                Actuamos como canal de distribución comercial en conformidad con la legislación de representación, marketing e intermediación permitida en cada jurisdicción.
               </p>
             </div>
           </div>
@@ -174,8 +307,12 @@
 
       <section class="cta" aria-labelledby="cta-titulo">
         <div class="container">
-          <h2 id="cta-titulo">Pronto para habilitar pagamentos globais com a força do Pix?</h2>
-          <p>Fale com o nosso time e descubra como levar suas operações para o próximo nível.</p>
+          <h2 id="cta-titulo">
+            <span class="lang lang-pt">Pronto para habilitar pagamentos globais com a força do Pix?</span>
+            <span class="lang lang-es">¿Listo para habilitar pagos globales con la fuerza del Pix?</span>
+          </h2>
+          <p class="lang lang-pt">Fale com o nosso time e descubra como levar suas operações para o próximo nível.</p>
+          <p class="lang lang-es">Habla con nuestro equipo y descubre cómo llevar tus operaciones al próximo nivel.</p>
           <a
             class="button button--primary button--whatsapp"
             href="https://wa.me/5511978393939?text=Quero%20conversar%20com%20a%20Nippon%20Finance"
@@ -183,7 +320,8 @@
             rel="noopener"
           >
             <span class="button__icon" aria-hidden="true">💬</span>
-            Converse pelo WhatsApp
+            <span class="lang lang-pt">Converse pelo WhatsApp</span>
+            <span class="lang lang-es">Habla por WhatsApp</span>
           </a>
         </div>
       </section>
@@ -193,29 +331,83 @@
       <div class="container footer__content">
         <div>
           <p class="footer__title">Nippon Finance</p>
-          <p>
+          <p class="lang lang-pt">
             Representante comercial de soluções de pagamentos, remessas e câmbio corporativo em mercados estratégicos do Grupo Casa Nippon.
+          </p>
+          <p class="lang lang-es">
+            Representante comercial de soluciones de pagos, remesas y cambio corporativo en mercados estratégicos del Grupo Casa Nippon.
           </p>
         </div>
         <div class="footer__contact">
-          <p><strong>Email:</strong> <a href="mailto:finance@casanippon.com.br">finance@casanippon.com.br</a></p>
+          <p>
+            <strong>
+              <span class="lang lang-pt">Email:</span>
+              <span class="lang lang-es">Correo electrónico:</span>
+            </strong>
+            <a href="mailto:finance@casanippon.com.br">finance@casanippon.com.br</a>
+          </p>
           <p>
             <strong>WhatsApp:</strong>
-            <a href="https://wa.me/5511978393939?text=Quero%20conversar%20com%20a%20Nippon%20Finance" target="_blank" rel="noopener">+55 (11) 97839-3939</a>
+            <a href="https://wa.me/5511978393939?text=Quero%20conversar%20com%20a%20Nippon%20Finance" target="_blank" rel="noopener"
+              >+55 (11) 97839-3939</a
+            >
           </p>
-          <p><strong>Endereço:</strong> São Paulo · Assunção · Buenos Aires · Santiago</p>
+          <p>
+            <strong>
+              <span class="lang lang-pt">Endereço:</span>
+              <span class="lang lang-es">Dirección:</span>
+            </strong>
+            <span class="lang lang-pt">São Paulo · Assunção · Buenos Aires · Santiago</span>
+            <span class="lang lang-es">São Paulo · Asunción · Buenos Aires · Santiago</span>
+          </p>
         </div>
         <div class="footer__links">
-          <a class="footer__tos" href="tos.html">Termos de representação comercial</a>
+          <a class="footer__tos" href="tos.html">
+            <span class="lang lang-pt">Termos de representação comercial</span>
+            <span class="lang lang-es">Términos de representación comercial</span>
+          </a>
         </div>
       </div>
       <div class="footer__bottom">
-        <p>© <span id="year"></span> Nippon Finance · Grupo Casa Nippon</p>
+        <p>
+          © <span id="year"></span> Nippon Finance · Grupo Casa Nippon
+        </p>
       </div>
     </footer>
 
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
+      (function () {
+        const languageButtons = document.querySelectorAll('[data-lang-switch]');
+        const body = document.body;
+        const html = document.documentElement;
+        const titles = {
+          pt: 'Nippon Finance | Soluções internacionais de pagamento com DNA Nippon',
+          es: 'Nippon Finance | Soluciones internacionales de pago con ADN Nippon',
+        };
+
+        function applyLanguage(lang) {
+          body.dataset.lang = lang;
+          html.lang = lang === 'pt' ? 'pt-BR' : 'es';
+          document.title = titles[lang];
+          languageButtons.forEach((button) => {
+            const isActive = button.dataset.langSwitch === lang;
+            button.classList.toggle('is-active', isActive);
+            button.setAttribute('aria-pressed', String(isActive));
+          });
+          localStorage.setItem('nf-lang', lang);
+        }
+
+        const stored = localStorage.getItem('nf-lang');
+        applyLanguage(stored === 'es' ? 'es' : 'pt');
+
+        languageButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            applyLanguage(button.dataset.langSwitch);
+          });
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+      })();
     </script>
   </body>
 </html>

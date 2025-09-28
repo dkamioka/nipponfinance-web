@@ -56,7 +56,14 @@
         letter-spacing: 0.08em;
         text-transform: uppercase;
         color: rgba(248, 250, 252, 0.6);
+      }
+
+      .tos-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-bottom: 24px;
+        gap: 16px;
       }
 
       @media (max-width: 720px) {
@@ -67,116 +74,250 @@
         .paper {
           padding: 32px 24px;
         }
+
+        .tos-actions {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+        }
       }
     </style>
   </head>
-  <body>
+  <body data-lang="pt">
     <main>
       <div class="container">
-        <a class="back-link" href="index.html">← Voltar ao site</a>
+        <div class="tos-actions">
+          <a class="back-link" href="index.html">
+            <span aria-hidden="true">←</span>
+            <span class="lang lang-pt">Voltar ao site</span>
+            <span class="lang lang-es">Volver al sitio</span>
+          </a>
+          <div class="lang-toggle" role="group" aria-label="Seleção de idioma">
+            <button type="button" data-lang-switch="pt" aria-pressed="true" aria-label="Português">PT</button>
+            <button type="button" data-lang-switch="es" aria-pressed="false" aria-label="Español">ES</button>
+          </div>
+        </div>
         <article class="paper">
-          <h1>Termos de Representação Comercial</h1>
-          <p>
+          <h1>
+            <span class="lang lang-pt">Termos de Representação Comercial</span>
+            <span class="lang lang-es">Términos de Representación Comercial</span>
+          </h1>
+          <p class="lang lang-pt">
             A Nippon Finance é uma iniciativa do Grupo Casa Nippon dedicada à prospecção e atendimento comercial de empresas que
             desejam contratar os produtos de câmbio e pagamentos da Frente Corretora de Câmbio. Ao utilizar este site, agendar
             reuniões ou solicitar propostas, você reconhece e concorda com os termos abaixo.
           </p>
+          <p class="lang lang-es">
+            Nippon Finance es una iniciativa del Grupo Casa Nippon dedicada a la prospección y atención comercial de empresas que
+            desean contratar los productos de cambio y pagos de la Frente Corretora de Câmbio. Al utilizar este sitio, agendar
+            reuniones o solicitar propuestas, reconoces y aceptas los términos a continuación.
+          </p>
 
-          <h2>1. Natureza da atuação</h2>
-          <p>
+          <h2>
+            <span class="lang lang-pt">1. Natureza da atuação</span>
+            <span class="lang lang-es">1. Naturaleza de la actuación</span>
+          </h2>
+          <p class="lang lang-pt">
             Não somos instituição financeira, sociedade de crédito ou empresa de meios de pagamento independente. Atuamos
             exclusivamente como representantes comerciais da Frente Corretora de Câmbio, instituição autorizada e supervisionada
             pelo Banco Central do Brasil, conforme a Lei nº 4.595/1964 e regulamentações complementares.
           </p>
-          <p>
+          <p class="lang lang-es">
+            No somos institución financiera, sociedad de crédito ni empresa independiente de medios de pago. Actuamos
+            exclusivamente como representantes comerciales de la Frente Corretora de Câmbio, institución autorizada y
+            supervisada por el Banco Central de Brasil, conforme a la Ley nº 4.595/1964 y regulaciones complementarias.
+          </p>
+          <p class="lang lang-pt">
             Nossos serviços abrangem marketing, geração de demanda, esclarecimento comercial, suporte durante a fase de
             documentação e acompanhamento de integrações. Toda contratação, análise de risco, aprovação cadastral, liquidação
             financeira, custódia de recursos e execução cambial é realizada diretamente pela Frente Corretora de Câmbio.
           </p>
+          <p class="lang lang-es">
+            Nuestros servicios comprenden marketing, generación de demanda, aclaraciones comerciales, soporte durante la fase de
+            documentación y acompañamiento de integraciones. Toda contratación, análisis de riesgo, aprobación de cadastro,
+            liquidación financiera, custodia de recursos y ejecución cambiaria es realizada directamente por la Frente Corretora de Câmbio.
+          </p>
 
-          <h2>2. Remuneração e transparência</h2>
-          <p>
+          <h2>
+            <span class="lang lang-pt">2. Remuneração e transparência</span>
+            <span class="lang lang-es">2. Remuneración y transparencia</span>
+          </h2>
+          <p class="lang lang-pt">
             Recebemos comissões diretamente da Frente Corretora pelos contratos firmados com clientes originados por nossa
             intermediação. Não cobramos taxas adicionais dos clientes finais e não manuseamos recursos financeiros em nenhum
             momento do fluxo operacional.
           </p>
+          <p class="lang lang-es">
+            Recibimos comisiones directamente de la Frente Corretora por los contratos celebrados con clientes originados por
+            nuestra intermediación. No cobramos tasas adicionales a los clientes finales y no manejamos recursos financieros en
+            ningún momento del flujo operacional.
+          </p>
 
-          <h2>3. Obrigações regulatórias nos países onde atuamos</h2>
-          <p>
+          <h2>
+            <span class="lang lang-pt">3. Obrigações regulatórias nos países onde atuamos</span>
+            <span class="lang lang-es">3. Obligaciones regulatorias en los países donde actuamos</span>
+          </h2>
+          <p class="lang lang-pt">
             Observamos as normas aplicáveis ao exercício de representação comercial e intermediação permitida em cada jurisdição.
             Isso inclui, mas não se limita a:
           </p>
+          <p class="lang lang-es">
+            Observamos las normas aplicables al ejercicio de representación comercial e intermediación permitida en cada
+            jurisdicción. Esto incluye, pero no se limita a:
+          </p>
           <ul>
             <li>
-              <strong>Brasil:</strong> Lei nº 4.595/1964 (Sistema Financeiro Nacional), Lei nº 4.886/1965 (Representação Comercial) e
-              normas do Banco Central do Brasil e do Conselho Monetário Nacional.
+              <span class="lang lang-pt"><strong>Brasil:</strong> Lei nº 4.595/1964 (Sistema Financeiro Nacional), Lei nº 4.886/1965 (Representação Comercial) e normas do Banco Central do Brasil e do Conselho Monetário Nacional.</span>
+              <span class="lang lang-es"><strong>Brasil:</strong> Ley nº 4.595/1964 (Sistema Financiero Nacional), Ley nº 4.886/1965 (Representación Comercial) y normas del Banco Central de Brasil y del Consejo Monetario Nacional.</span>
             </li>
             <li>
-              <strong>Paraguai:</strong> Lei nº 861/1996 - General de Bancos, Financieras y Otras Entidades de Crédito, emitida pelo Banco
-              Central del Paraguay, que define e regula as entidades habilitadas a operar com câmbio e crédito.
+              <span class="lang lang-pt"><strong>Paraguai:</strong> Lei nº 861/1996 - General de Bancos, Financieras y Otras Entidades de Crédito, emitida pelo Banco Central del Paraguay.</span>
+              <span class="lang lang-es"><strong>Paraguay:</strong> Ley nº 861/1996 - General de Bancos, Financieras y Otras Entidades de Crédito, emitida por el Banco Central del Paraguay.</span>
             </li>
             <li>
-              <strong>Argentina:</strong> Lei nº 21.526 - Lei de Entidades Financeiras, regulamentada pelo Banco Central de la República
-              Argentina (BCRA), que disciplina a oferta de serviços financeiros e cambiais.
+              <span class="lang lang-pt"><strong>Argentina:</strong> Lei nº 21.526 - Lei de Entidades Financeiras, regulamentada pelo Banco Central de la República Argentina (BCRA).</span>
+              <span class="lang lang-es"><strong>Argentina:</strong> Ley nº 21.526 - Ley de Entidades Financieras, reglamentada por el Banco Central de la República Argentina (BCRA).</span>
             </li>
             <li>
-              <strong>Chile:</strong> Decreto com Força de Lei nº 3/1997 - Lei Geral de Bancos e circulares da Comisión para el Mercado
-              Financiero (CMF), responsáveis por normatizar a atuação de instituições financeiras e representantes.
+              <span class="lang lang-pt"><strong>Chile:</strong> Decreto com Força de Lei nº 3/1997 - Lei Geral de Bancos e circulares da Comisión para el Mercado Financiero (CMF).</span>
+              <span class="lang lang-es"><strong>Chile:</strong> Decreto con Fuerza de Ley nº 3/1997 - Ley General de Bancos y circulares de la Comisión para el Mercado Financiero (CMF).</span>
             </li>
           </ul>
-          <p>
+          <p class="lang lang-pt">
             Em todos esses países, nossas interações limitam-se à divulgação e ao suporte comercial dos produtos da Frente
             Corretora. Não oferecemos, intermediamos ou executamos operações que exijam licença local de instituição financeira,
             câmbio ou pagamentos.
           </p>
-
-          <h2>4. Produtos divulgados</h2>
-          <p>
-            Os produtos Pix Internacional, a plataforma digital de remessas e os serviços de remessas e câmbio corporativo divulgados
-            neste site são de titularidade da Frente Corretora de Câmbio. Qualquer contratação depende da aprovação formal da
-            Frente Corretora, de acordo com os procedimentos de know your customer (KYC), prevenção à lavagem de dinheiro (PLD) e
-            financiamento ao terrorismo (FT).
+          <p class="lang lang-es">
+            En todos esos países, nuestras interacciones se limitan a la divulgación y soporte comercial de los productos de la
+            Frente Corretora. No ofrecemos, intermediamos ni ejecutamos operaciones que exijan licencia local de institución
+            financiera, cambio o pagos.
           </p>
 
-          <h2>5. Responsabilidades do cliente</h2>
-          <p>
+          <h2>
+            <span class="lang lang-pt">4. Produtos divulgados</span>
+            <span class="lang lang-es">4. Productos divulgados</span>
+          </h2>
+          <p class="lang lang-pt">
+            Os produtos Pix Internacional, a plataforma digital de remessas e os serviços de remessas e câmbio corporativo
+            divulgados neste site são de titularidade da Frente Corretora de Câmbio. Qualquer contratação depende da aprovação
+            formal da Frente Corretora, de acordo com os procedimentos de know your customer (KYC), prevenção à lavagem de
+            dinheiro (PLD) e financiamento ao terrorismo (FT).
+          </p>
+          <p class="lang lang-es">
+            Los productos Pix Internacional, la plataforma digital de remesas y los servicios de remesas y cambio corporativo
+            divulgados en este sitio son propiedad de la Frente Corretora de Câmbio. Cualquier contratación depende de la
+            aprobación formal de la Frente Corretora, de acuerdo con los procedimientos de know your customer (KYC), prevención
+            de lavado de dinero (PLD) y financiamiento al terrorismo (FT).
+          </p>
+
+          <h2>
+            <span class="lang lang-pt">5. Responsabilidades do cliente</span>
+            <span class="lang lang-es">5. Responsabilidades del cliente</span>
+          </h2>
+          <p class="lang lang-pt">
             É responsabilidade do cliente fornecer informações precisas, cumprir com as exigências documentais e observar as leis
             fiscais e cambiais vigentes em sua jurisdição. A Nippon Finance pode auxiliar no esclarecimento de dúvidas, mas não
             presta consultoria jurídica, contábil ou fiscal.
           </p>
+          <p class="lang lang-es">
+            Es responsabilidad del cliente proporcionar información precisa, cumplir con los requisitos documentales y observar
+            las leyes fiscales y cambiarias vigentes en su jurisdicción. Nippon Finance puede auxiliar en el esclarecimiento de
+            dudas, pero no presta consultoría jurídica, contable o fiscal.
+          </p>
 
-          <h2>6. Limitação de responsabilidade</h2>
-          <p>
+          <h2>
+            <span class="lang lang-pt">6. Limitação de responsabilidade</span>
+            <span class="lang lang-es">6. Limitación de responsabilidad</span>
+          </h2>
+          <p class="lang lang-pt">
             A Nippon Finance não se responsabiliza por decisões, atrasos ou recusas provenientes da Frente Corretora ou de órgãos
             reguladores. Não respondemos por perdas indiretas, lucros cessantes ou danos decorrentes de indisponibilidade técnica
             dos sistemas da Frente Corretora ou de terceiros envolvidos na cadeia operacional.
           </p>
+          <p class="lang lang-es">
+            Nippon Finance no se responsabiliza por decisiones, retrasos o rechazos provenientes de la Frente Corretora o de
+            organismos reguladores. No respondemos por pérdidas indirectas, lucro cesante o daños derivados de indisponibilidad
+            técnica de los sistemas de la Frente Corretora o de terceros involucrados en la cadena operacional.
+          </p>
 
-          <h2>7. Privacidade e proteção de dados</h2>
-          <p>
+          <h2>
+            <span class="lang lang-pt">7. Privacidade e proteção de dados</span>
+            <span class="lang lang-es">7. Privacidad y protección de datos</span>
+          </h2>
+          <p class="lang lang-pt">
             Os dados coletados por este site são utilizados exclusivamente para fins comerciais e de relacionamento. A gestão de
             dados sensíveis submetidos durante o onboarding é realizada pela Frente Corretora em conformidade com a Lei Geral de
             Proteção de Dados (Lei nº 13.709/2018) e legislações equivalentes nos demais países.
           </p>
+          <p class="lang lang-es">
+            Los datos recopilados por este sitio se utilizan exclusivamente con fines comerciales y de relacionamiento. La
+            gestión de datos sensibles enviados durante el onboarding es realizada por la Frente Corretora en conformidad con la
+            Ley General de Protección de Datos (Ley nº 13.709/2018) y legislaciones equivalentes en los demás países.
+          </p>
 
-          <h2>8. Atualizações</h2>
-          <p>
+          <h2>
+            <span class="lang lang-pt">8. Atualizações</span>
+            <span class="lang lang-es">8. Actualizaciones</span>
+          </h2>
+          <p class="lang lang-pt">
             Este documento pode ser atualizado a qualquer momento para refletir mudanças regulatórias, contratuais ou de produto.
             Recomendamos a revisão periódica desta página.
           </p>
+          <p class="lang lang-es">
+            Este documento puede ser actualizado en cualquier momento para reflejar cambios regulatorios, contractuales o de
+            producto. Recomendamos la revisión periódica de esta página.
+          </p>
 
-          <p style="margin-top: 48px; font-size: 14px; color: rgba(248, 250, 252, 0.5);">
-            Última atualização: <span id="last-update"></span>
+          <p style="margin-top: 48px; font-size: 14px; color: rgba(248, 250, 252, 0.5); display: flex; gap: 4px; align-items: center;">
+            <span class="lang lang-pt">Última atualização:</span>
+            <span class="lang lang-es">Última actualización:</span>
+            <span id="last-update"></span>
           </p>
         </article>
       </div>
     </main>
     <script>
-      document.getElementById("last-update").textContent = new Date().toLocaleDateString("pt-BR", {
-        day: "2-digit",
-        month: "long",
-        year: "numeric",
-      });
+      (function () {
+        const languageButtons = document.querySelectorAll('[data-lang-switch]');
+        const body = document.body;
+        const html = document.documentElement;
+        const titles = {
+          pt: 'Termos de Representação Comercial | Nippon Finance',
+          es: 'Términos de Representación Comercial | Nippon Finance',
+        };
+        const dateElement = document.getElementById('last-update');
+
+        function formatDate(lang) {
+          return new Date().toLocaleDateString(lang === 'pt' ? 'pt-BR' : 'es-ES', {
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric',
+          });
+        }
+
+        function applyLanguage(lang) {
+          body.dataset.lang = lang;
+          html.lang = lang === 'pt' ? 'pt-BR' : 'es';
+          document.title = titles[lang];
+          languageButtons.forEach((button) => {
+            const isActive = button.dataset.langSwitch === lang;
+            button.classList.toggle('is-active', isActive);
+            button.setAttribute('aria-pressed', String(isActive));
+          });
+          dateElement.textContent = formatDate(lang);
+          localStorage.setItem('nf-lang', lang);
+        }
+
+        const stored = localStorage.getItem('nf-lang');
+        applyLanguage(stored === 'es' ? 'es' : 'pt');
+
+        languageButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            applyLanguage(button.dataset.langSwitch);
+          });
+        });
+      })();
     </script>
   </body>
 </html>

@@ -30,6 +30,19 @@ body {
   color: var(--text);
 }
 
+.lang {
+  display: none !important;
+}
+
+body[data-lang="pt"] .lang-pt {
+  display: revert !important;
+}
+
+body[data-lang="es"] .lang-es {
+  display: revert !important;
+}
+
+
 a {
   color: inherit;
   text-decoration: none;
@@ -63,6 +76,12 @@ a:focus {
   padding-bottom: 20px;
 }
 
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .logo {
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -75,6 +94,49 @@ a:focus {
   gap: 24px;
   font-size: 14px;
   color: var(--text-muted);
+}
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  padding: 4px;
+  background: rgba(15, 23, 42, 0.6);
+  box-shadow: 0 12px 24px -18px rgba(15, 23, 42, 0.6);
+}
+
+.lang-toggle button {
+  border: none;
+  background: transparent;
+  color: var(--text-soft);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lang-toggle button:hover,
+.lang-toggle button:focus {
+  color: var(--text);
+  background: rgba(148, 163, 184, 0.16);
+  outline: none;
+}
+
+.lang-toggle button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.lang-toggle button.is-active {
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.8), rgba(18, 140, 126, 0.9));
+  color: #fff;
+  box-shadow: 0 12px 26px -18px rgba(18, 140, 126, 0.8);
 }
 
 .hero {
@@ -294,7 +356,6 @@ section h2 {
   display: flex;
   flex-direction: column;
   gap: 12px;
-
 }
 
 .step__number {
@@ -421,8 +482,17 @@ section h2 {
 }
 
 @media (max-width: 720px) {
+  .navbar__actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
   .nav-links {
     display: none;
+  }
+
+  .lang-toggle {
+    margin-left: auto;
   }
 
   .hero {
